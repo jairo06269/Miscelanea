@@ -7,12 +7,14 @@ public class Main
 
     public static void main(String[] args)
     {
-
+    double opcion=0;
     double numero1=0;
     double numero2=0;
     double numero3=0;
     Scanner sr = new Scanner(System.in);
 
+
+     do{
         System.out.println("Que desea hacer?");
         System.out.println("1. Calcular el área de un triángulo.");
         System.out.println("2. Ingresar dos números por teclado y sumarlos");
@@ -105,17 +107,11 @@ public class Main
             numero3 = sr.nextDouble();
 
             System.out.println("El promedio de los tres numero es: "+data.calcularPromedio(numero1,numero2,numero3));
-
         }
+         System.out.println("desea volver a ejecutar programa 1.Si 99.No ");
+        opcion = sr.nextDouble();
 
-
-
-
-
-
-
-
-
+     } while(opcion!=99);
         ;
     }
 }
