@@ -41,13 +41,6 @@ public class Data
 
     }
 
-    public double perimetroCuadrado (double numero1)
-    {
-
-        return ( numero1 * 4 );
-
-    }
-
     public double calcularAreaCilindro (double numero1,double numero2)
     {
 
@@ -55,6 +48,22 @@ public class Data
 
     }
 
+    public double perimetroCuadrado (double numero1)
+    {
 
+        return ( numero1 * 4 );
+
+    }
+    public double areaCirculo (double numero1)
+    {
+
+        return (Math.PI * Math.pow(numero1,2) );
+
+    }
+
+    public double calcularPromedio (double numero1, double numero2, double numero3)
+    {
+        return ((numero1+numero2+numero3)/3);
+    }
 
 }

@@ -23,8 +23,7 @@ public class Main
         System.out.println("6. Escribir un algoritmo que determine el área y el volúmen de un cilindro");
         System.out.println("7. Realizar un algoritmo que lea el radio de una circunferencia y escriba la longitud de la misma y\n" +
                 "el área (pi*r)^2 del círculo inscrito.");
-        System.out.println("8. Realizar un algoritmo que lea el radio de una circunferencia y escriba la longitud de la misma y\n" +
-                "el área (pi*r)^2 del círculo inscrito.");
+        System.out.println("8. Calcular el promedio de tres (3) números ingresados por teclado");
 
         numero1=sr.nextDouble();
         Data data = new Data();
@@ -91,11 +90,24 @@ public class Main
                     "el área (pi*r)^2 del círculo inscrito.");
             System.out.println("ingrese radio de circunferencia");
             numero1 = sr.nextDouble();
-            System.out.println("ingrese radio del cilindro");
-            numero2 = sr.nextDouble();
-            System.out.println("El volumen del cilindro es "+data.calcularAreaCilindro(numero1,numero2));
-            System.out.println("El area del cilindro es "+ data.calcularVolumenCilindro(numero1,numero2));
+
+            System.out.println("El area del circulo es "+data.areaCirculo(numero1));
+
         }
+        if (numero1 == 8)
+        {
+            System.out.println("8. Calcular el promedio de tres (3) números ingresados por teclado");
+            System.out.println("ingrese numero1");
+            numero1 = sr.nextDouble();
+            System.out.println("ingrese numero2");
+            numero2 = sr.nextDouble();
+            System.out.println("ingrese numero3");
+            numero3 = sr.nextDouble();
+
+            System.out.println("El promedio de los tres numero es: "+data.calcularPromedio(numero1,numero2,numero3));
+
+        }
+
 
 
 
