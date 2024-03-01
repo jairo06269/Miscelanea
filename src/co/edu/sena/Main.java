@@ -55,6 +55,48 @@ public class Main
 
             System.out.println("el numero elevado al cuadrado es "+data.elevarNumeroAlCuadrado(numero1));
         }
+        if (numero1 == 4)
+        {
+            System.out.println("Elegiste  4. Escribir un algoritmo que convierta de euros a dólares.");
+            System.out.println("ingrese el valor a convertir a dolares ");
+            numero1 = sr.nextDouble();
+
+            System.out.println("el valor convertido a dolares es "+data.convertirADolares(numero1));
+
+        }
+
+        if (numero1 == 5)
+        {
+            System.out.println("Elegiste  5. Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del área y del\n" +
+                    "perímetro");
+            System.out.println("ingrese el valor del lado del cuadrado");
+            numero1 = sr.nextDouble();
+            System.out.println("el area del cuadrado es: "+data.areaCuadrado(numero1));
+            System.out.println("el perimetro del cuadrado es: "+data.perimetroCuadrado(numero1));
+        }
+
+        if (numero1 == 6)
+        {
+            System.out.println("6. Escribir un algoritmo que determine el área y el volúmen de un cilindro");
+            System.out.println("ingrese altura de cilindro");
+            numero1 = sr.nextDouble();
+            System.out.println("ingrese radio del cilindro");
+            numero2 = sr.nextDouble();
+            System.out.println("El volumen del cilindro es "+data.calcularAreaCilindro(numero1,numero2));
+            System.out.println("El area del cilindro es "+ data.calcularVolumenCilindro(numero1,numero2));
+        }
+        if (numero1 == 7)
+        {
+            System.out.println("7. Realizar un algoritmo que lea el radio de una circunferencia y escriba la longitud de la misma y\n" +
+                    "el área (pi*r)^2 del círculo inscrito.");
+            System.out.println("ingrese radio de circunferencia");
+            numero1 = sr.nextDouble();
+            System.out.println("ingrese radio del cilindro");
+            numero2 = sr.nextDouble();
+            System.out.println("El volumen del cilindro es "+data.calcularAreaCilindro(numero1,numero2));
+            System.out.println("El area del cilindro es "+ data.calcularVolumenCilindro(numero1,numero2));
+        }
+
 
 
 
